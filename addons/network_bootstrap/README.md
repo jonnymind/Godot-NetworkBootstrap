@@ -42,6 +42,9 @@ instances too.
 
 > __Tip__: Godot 4 is planned to have per-run command line options you can set on the fly.
 
+__IMPORTANT__: When exporting the game, remember to __manually__ set the appropriate application type,
+and for release builds, to __disable__ the ability to change the options from the command line.
+
 ### The "both" mode
 
 In `both` mode, the plugin acts both as a client and a server. It opens a server connection,
