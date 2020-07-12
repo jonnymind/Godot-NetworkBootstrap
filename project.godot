@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="NetworkBootstrap demo"
+run/main_scene="res://addons/network_bootstrap/example/ServerPlane.tscn"
+config/icon="res://addons/network_bootstrap/icon.png"
+network/application_type=0
+network/host="localhost"
+network/port=8089
+network/allow_cmd_line=true
+
+[autoload]
+
+NetworkBootstrap="*res://addons/network_bootstrap/network_bootstrap.gd"
+
+[display]
+
+window/size/width=320
+window/size/height=180
+window/size/test_width=640
+window/size/test_height=320
+window/stretch/mode="2d"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "network_bootstrap" )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
